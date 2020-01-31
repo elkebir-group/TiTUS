@@ -108,10 +108,6 @@ format for each line of the ptree file is '\<node name\> \<child1 name\> \<child
 	  -u int
 	     Number of unsampled hosts (default: 0)
 
-An example execution:
-
-    $ ./sankoff ../data/sample/sample_host.out ../data/sample/sample_ptree.out ../data/sample/sample_enum.out -u 1 -e -l 5
-
 <a name="sample"></a>
 ### Naive Sampling (`naive_sample`)
 
@@ -129,11 +125,6 @@ An example execution:
 	     Root label (default: 0)
 	  -u int
 	     Number of unsampled hosts (default: 0)
-
-
-An example execution:
-
-    $ ./sample_sankoff -l 1 -u 1 ../data/sample/sample_host.out ../data/sample/sample_ptree.out ../data/sample/sample_
 
 
 <a name="sat"></a>
@@ -157,10 +148,6 @@ An example execution:
 	  -u int
 	     Number of unsampled hosts (default: 0)
 
-An example execution:
-
-    $ ./dimacs ../data/sample/sample_host.out ../data/sample/sample_ptree.out ../data/sample/sample_dimacs.cnf ../data/sample/sample_varlist.txt -u 1 -k 4
-
 <a name="sctt"></a>
 
 ### Single Consensus Transmission Tree (`sctt`)
@@ -175,9 +162,3 @@ An example execution:
 	     contact map file: (default: empty)
 	  -m str
 	     Contact map file: (default: empty)
-
-An example execution:
-
-    $ ./gamma -u 1 ../data/sample/sample_host.out ../data/sample/sample_idx0_count1.out 2> ../data/sample/example.dot
-    $ dot -Tpng ../data/sample/example.dot -o ../data/sample/example.png
-
