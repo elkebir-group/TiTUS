@@ -11,7 +11,7 @@ while supporting a weak transmission bottleneck
 (a) The input of the problem consists of a timed phylogeny T that captures the
 evolutionary history of the pathogen during the course of the outbreak. Each leaf of T corresponds to a sample collected for an individual host (indicated by colors). The entry and removal times for each host are also included in the input. (b) Our aim is to label the
 internal vertices of T with such that the resulting transmission edges form a transmission tree S. Each edge of S is weighted
-by the number of transmission edges from host s to host t given by the vertex labeling (c) An alternative solution to the given DTI instance. It is easy
+by the number of transmission edges given by the vertex labeling from the donor to the recipient host (c) An alternative solution to the given DTI instance. It is easy
 to see that no solution exists under the strong bottleneck constraint whereas under the weak transmission bottleneck there are multiple solutions
 
 ## Contents
