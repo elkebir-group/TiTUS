@@ -85,28 +85,28 @@ format for each line of the ptree file is '\<node name\> \<child1 name\> \<child
 
 ###  Naive Labeling (`naive`)
 
-Usage:
-  ./naive [--help|-h|-help] [-c] [-e] [-l int] [-m str] [-p] [-r int] [-t]
-     [-u int] <host> / <transmission_tree> <ptree> <output_ptree>
-Where:
-  --help|-h|-help
-     Print a short help message
-  -c
-     Find consensus Sankoff solution (deafault: false)
-  -e
-     Enumerate all the solutions (default: false)
-  -l int
-     Enumeration solution number limit (default: intMax)
-  -m str
-     Contact map file: (default: empty)
-  -p
-     Parsimony flag (default: false)
-  -r int
-     Root label (default: 0)
-  -t
-     Transmission tree instead of host file
-  -u int
-     Number of unsampled hosts (default: 0)
+	Usage:
+	  ./naive [--help|-h|-help] [-c] [-e] [-l int] [-m str] [-p] [-r int] [-t]
+	     [-u int] <host> / <transmission_tree> <ptree> <output_ptree>
+	Where:
+	  --help|-h|-help
+	     Print a short help message
+	  -c
+	     Find consensus Sankoff solution (deafault: false)
+	  -e
+	     Enumerate all the solutions (default: false)
+	  -l int
+	     Enumeration solution number limit (default: intMax)
+	  -m str
+	     Contact map file: (default: empty)
+	  -p
+	     Parsimony flag (default: false)
+	  -r int
+	     Root label (default: 0)
+	  -t
+	     Transmission tree instead of host file
+	  -u int
+	     Number of unsampled hosts (default: 0)
 
 An example execution:
 
@@ -115,20 +115,20 @@ An example execution:
 <a name="sample"></a>
 ### Naive Sampling (`naive_sample`)
 
-Usage:
-  ./naive_sample [--help|-h|-help] [-l int] [-m str] [-r int] [-u int] <host>
-     <ptree> <output_prefix>
-Where:
-  --help|-h|-help
-     Print a short help message
-  -l int
-     Number of samples (default: 11000)
-  -m str
-     Contact map file: (default: empty)
-  -r int
-     Root label (default: 0)
-  -u int
-     Number of unsampled hosts (default: 0)
+	Usage:
+	  ./naive_sample [--help|-h|-help] [-l int] [-m str] [-r int] [-u int] <host>
+	     <ptree> <output_prefix>
+	Where:
+	  --help|-h|-help
+	     Print a short help message
+	  -l int
+	     Number of samples (default: 11000)
+	  -m str
+	     Contact map file: (default: empty)
+	  -r int
+	     Root label (default: 0)
+	  -u int
+	     Number of unsampled hosts (default: 0)
 
 
 An example execution:
@@ -140,22 +140,22 @@ An example execution:
 
 ### SAT formulation (`dimacs`)
 
-Usage:
-  ./dimacs [--help|-h|-help] [-c str] [-i str] [-r int] [-s] [-u int] <host>
-     <ptree> <output_dimacs_file> <output_varlist_file>
-Where:
-  --help|-h|-help
-     Print a short help message
-  -c str
-     contact map file: (default: empty)
-  -i str
-     infection window file: (default: empty)
-  -r int
-     Root label (default: 0)
-  -s
-     strong bottleneck flag: (default: false)
-  -u int
-     Number of unsampled hosts (default: 0)
+	Usage:
+	  ./dimacs [--help|-h|-help] [-c str] [-i str] [-r int] [-s] [-u int] <host>
+	     <ptree> <output_dimacs_file> <output_varlist_file>
+	Where:
+	  --help|-h|-help
+	     Print a short help message
+	  -c str
+	     contact map file: (default: empty)
+	  -i str
+	     infection window file: (default: empty)
+	  -r int
+	     Root label (default: 0)
+	  -s
+	     strong bottleneck flag: (default: false)
+	  -u int
+	     Number of unsampled hosts (default: 0)
 
 An example execution:
 
@@ -165,16 +165,16 @@ An example execution:
 
 ### Single Consensus Transmission Tree (`sctt`)
 
-Usage:
-  ./sctt [--help|-h|-help] [-c str] [-m str] <host>
-     <transmission tree prefix> <output_ptree_file>
-Where:
-  --help|-h|-help
-     Print a short help message
-  -c str
-     contact map file: (default: empty)
-  -m str
-     Contact map file: (default: empty)
+	Usage:
+	  ./sctt [--help|-h|-help] [-c str] [-m str] <host>
+	     <transmission tree prefix> <output_ptree_file>
+	Where:
+	  --help|-h|-help
+	     Print a short help message
+	  -c str
+	     contact map file: (default: empty)
+	  -m str
+	     Contact map file: (default: empty)
 
 An example execution:
 
