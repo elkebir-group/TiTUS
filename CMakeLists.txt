@@ -46,32 +46,6 @@ set( dimacs_src
   src/dimacs.cpp
   )
 
-set( gamma_hdr
-  src/utils.h
-  src/basetree.h
-  )
-
-set( gamma_src
-  src/utils.cpp
-  src/basetree.cpp
-  src/gammamain.cpp
-  )
-
-set( fpt_hdr
-  src/utils.h
-  src/transmissiontree.h
-  src/basetree.h
-  src/fptsolver.h
-  )
-
-set( fpt_src
-  src/fptmain.cpp
-  src/utils.cpp
-  src/transmissiontree.cpp
-  src/basetree.cpp
-  src/fptsolver.cpp
-  )
-
 set( naive_hdr
   src/utils.h
   src/basetree.h
@@ -124,12 +98,6 @@ set( parser_src
 
 add_executable( dimacs ${dimacs_src} ${dimacs_hdr} )
 target_link_libraries( dimacs ${CommonLibs} )
-
-add_executable( gamma ${gamma_src} ${gamma_hdr} )
-target_link_libraries( gamma ${CommonLibs} )
-
-add_executable( fpt ${fpt_src} ${fpt_hdr} )
-target_link_libraries( fpt ${CommonLibs} )
 
 add_executable( naive ${naive_src} ${naive_hdr} )
 target_link_libraries( naive ${CommonLibs} )
