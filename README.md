@@ -110,7 +110,7 @@ format for each line of the ptree file is '\<node name\> \<child1 name\> \<child
 
 An example execution:
 
-  $ ./naive ../data/sample_host.out ../data/sample_ptree.out ../data/sample_naive.out -e
+    $ ./naive ../data/sample_host.out ../data/sample_ptree.out ../data/sample_naive.out -e
 
 <a name="sample"></a>
 ### Naive Sampling (`naive_sample`)
@@ -132,7 +132,7 @@ An example execution:
 
 An example execution:
 
-  $ ./naive_sample ../data/sample_host.out ../data/sample_ptree.out ../data/sample_naive_sampling_
+    $ ./naive_sample ../data/sample_host.out ../data/sample_ptree.out ../data/sample_naive_sampling_
 
 <a name="sat"></a>
 
@@ -157,7 +157,7 @@ An example execution:
 
 An example execution:
 
-  $ ./dimacs ../data/sample_host.out ../data/sample_ptree.out ../data/sample_dimacs.cnf ../data/sample_varlist.txt
+    $ ./dimacs ../data/sample_host.out ../data/sample_ptree.out ../data/sample_dimacs.cnf ../data/sample_varlist.txt
 
 <a name="sctt"></a>
 
@@ -176,5 +176,5 @@ An example execution:
 
 An example execution:
 
-  $ ./sctt ../data/sample_host.out ../data/sample_ttrees.out ../data/sample_consensus_tree.out
-  $ dot -Tpdf sample_consensus_tree.out.dot -o sample_consensus_tree.pdf
+    $ ./sctt ../data/sample_host.out ../data/sample_ttrees.out ../data/sample_consensus_tree.out
+    $ dot -Tpdf sample_consensus_tree.out.dot -o sample_consensus_tree.pdf
