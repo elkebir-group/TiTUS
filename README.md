@@ -108,6 +108,10 @@ format for each line of the ptree file is '\<node name\> \<child1 name\> \<child
 	  -u int
 	     Number of unsampled hosts (default: 0)
 
+An example execution:
+
+  $ ./naive ../data/sample_host.out ../data/sample_ptree.out ../data/sample_naive.out -e
+
 <a name="sample"></a>
 ### Naive Sampling (`naive_sample`)
 
@@ -126,6 +130,9 @@ format for each line of the ptree file is '\<node name\> \<child1 name\> \<child
 	  -u int
 	     Number of unsampled hosts (default: 0)
 
+An example execution:
+
+  $ ./naive_sample ../data/sample_host.out ../data/sample_ptree.out ../data/sample_naive_sampling_
 
 <a name="sat"></a>
 
@@ -148,6 +155,10 @@ format for each line of the ptree file is '\<node name\> \<child1 name\> \<child
 	  -u int
 	     Number of unsampled hosts (default: 0)
 
+An example execution:
+
+  $ ./dimacs ../data/sample_host.out ../data/sample_ptree.out ../data/sample_dimacs.cnf ../data/sample_varlist.txt
+
 <a name="sctt"></a>
 
 ### Single Consensus Transmission Tree (`sctt`)
@@ -162,3 +173,7 @@ format for each line of the ptree file is '\<node name\> \<child1 name\> \<child
 	     contact map file: (default: empty)
 	  -m str
 	     Contact map file: (default: empty)
+
+An example execution:
+
+  $ ./sctt ../data/sample_host.out ../data/sample_ttrees.out ../data/sample_consensus_tree.out
