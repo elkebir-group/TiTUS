@@ -177,3 +177,4 @@ An example execution:
 An example execution:
 
   $ ./sctt ../data/sample_host.out ../data/sample_ttrees.out ../data/sample_consensus_tree.out
+  $ dot -Tpdf sample_consensus_tree.out.dot -o sample_consensus_tree.pdf
