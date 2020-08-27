@@ -79,7 +79,7 @@ The format of each line of the host file is '\<host name\> \<entry time\> \<remo
 each line. The number of lines in the host file is the number of sampled hosts.
 A ptree file gives the timed phylogeny with the leaf labeling. Each line
 of ptree file has exactly 4 entries separated by ' '. The
-format for each line of the ptree file is '\<node name\> \<child1 name\> \<child2 name\> \<host label\>'. The number of lines in the ptree file is the number of nodes in the timed phylogeny. The nodes of the tree in the file must be in post-order (all nodes must be preceded by their children). For a leaf the <child name> must be '0'.
+format for each line of the ptree file is '\<node time\> \<child1 name\> \<child2 name\> \<host label\>'. The number of lines in the ptree file is the number of nodes in the timed phylogeny. The nodes of the tree in the file must be in post-order (all nodes must be preceded by their children). For a leaf the <child name> must be '0'.
 
 <a name="sankoff"></a>
 
@@ -177,4 +177,4 @@ An example execution:
 An example execution:
 
     $ ./sctt ../data/sample_host.out ../data/sample_ttrees.out ../data/sample_consensus_tree.out
-    $ dot -Tpdf sample_consensus_tree.out.dot -o sample_consensus_tree.pdf
+    $ dot -Tpdf ../data/sample_consensus_tree.out.dot -o ../data/sample_consensus_tree.pdf
