@@ -73,13 +73,23 @@ EXECUTABLE       | DESCRIPTION
 <a name="io"></a>
 ### I/O formats
 
-The TiTUS input is text based. There are two input files, host file
-and ptree file. Each line of the host file has exactly 3 entries separated by ' '.
+The TiTUS input is text based.
+There are two input files, host file and ptree file.
+Each line of the host file has exactly 3 entries separated by ' '.
 The format of each line of the host file is '\<host name\> \<entry time\> \<removal time\>' in
 each line. The number of lines in the host file is the number of sampled hosts.
 A ptree file gives the timed phylogeny with the leaf labeling. Each line
 of ptree file has exactly 4 entries separated by ' '. The
-format for each line of the ptree file is '\<node time\> \<child1 name\> \<child2 name\> \<host label\>'. The number of lines in the ptree file is the number of nodes in the timed phylogeny. The nodes of the tree in the file must be in post-order (all nodes must be preceded by their children). For a leaf the <child name> must be '0'.
+format for each line of the ptree file is '\<node time\> \<child1 name\> \<child2 name\> \<host label\>'. The number of lines in the ptree file is the number of nodes in the timed phylogeny.
+The nodes of the tree in the file must be in post-order (all nodes must be preceded by their children). For a leaf the <child name> must be '0'.
+
+For the consensus tree problem (`sctt`), the input consists of two file -- the host file and the transmission tree files.
+The host file is in the same format as described above.
+An example of the transmission tree file is `data/sample_ttrees.out`.
+The first line of the transmission tree file gives the number of transmission trees in the file.
+The subsequent lines describe each transmission tree as follows.
+The first line will have the number of edges in the tree, followed by the edges in each new line in the format -- '\<source\> \<target\> \<weight\>'.
+The source node is the infector host, the target node is the recipient host and the weight signifies the number of strains transferred during the infection event.
 
 <a name="sankoff"></a>
 
@@ -165,7 +175,7 @@ An example execution:
 
 	Usage:
 	  ./sctt [--help|-h|-help] [-c str] [-m str] <host>
-	     <transmission tree prefix> <output_ptree_file>
+	     <input transmission trees> <output_consensus_transmission_tree>
 	Where:
 	  --help|-h|-help
 	     Print a short help message
